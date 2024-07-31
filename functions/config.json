@@ -1,0 +1,22 @@
+[
+    {
+        "name": "resetPassword",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "getRandomWorkout",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "createWorkout",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "updateWorkout",
+        "private": false,
+        "disable_arg_logs": true
+    }
+]
