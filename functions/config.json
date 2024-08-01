@@ -18,5 +18,22 @@
         "name": "updateWorkout",
         "private": false,
         "disable_arg_logs": true
+    },
+    {
+        "name": "readExercises",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "updateCreatedByModifiedBy",
+        "private": true,
+        "run_as_system": true,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "updateSlug",
+        "private": true,
+        "run_as_system": true,
+        "disable_arg_logs": true
     }
 ]
