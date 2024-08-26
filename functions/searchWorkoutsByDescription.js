@@ -9,7 +9,7 @@ exports = function(args){
         index: 'default',
         text: {
           query: args,
-          path: 'description'
+          path: ['description', 'title']
         }
       }
     })
