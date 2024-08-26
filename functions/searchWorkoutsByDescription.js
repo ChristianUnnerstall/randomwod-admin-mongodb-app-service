@@ -4,7 +4,6 @@ exports = function(args){
 
     var pipeline = []
   
-    pipeline.push({ "$match": { "meta.status": "draft" }})
     pipeline.push({ "$search": 
       {
         index: 'default',
@@ -14,6 +13,8 @@ exports = function(args){
         }
       }
     })
+    pipeline.push({ "$match": { "meta.status": "draft" }})
+    
     //pipeline.push({ "$project": {title: 1, description: 1, mode: 1, slug: '$meta.slug'}})
   
     return collection.aggregate(pipeline);
