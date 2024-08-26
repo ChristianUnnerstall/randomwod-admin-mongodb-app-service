@@ -13,7 +13,7 @@ exports = function(args){
         }
       }
     })
-    //pipeline.push({ "$match": { "meta.status": "draft" }})
+    pipeline.push({ "$match": { "meta.status": { $ne: "delete" }}})
     
     //pipeline.push({ "$project": {title: 1, description: 1, mode: 1, slug: '$meta.slug'}})
   
