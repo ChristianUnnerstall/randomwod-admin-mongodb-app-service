@@ -4,7 +4,7 @@ exports = function(args){
 
     var pipeline = []
   
-    pipeline.push({ "$match": BSON.ObjectId(args)})
+    pipeline.push({ "$match": {_id: BSON.ObjectId(args)}})
     //pipeline.push({ "$project": {title: 1, description: 1, mode: 1, slug: '$meta.slug'}})
   
     return collection.aggregate(pipeline);
